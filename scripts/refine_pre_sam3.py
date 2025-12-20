@@ -13,6 +13,11 @@ if str(PROJECT_ROOT) not in sys.path:
 
 from src.clean_empty_labels import clean_empty_labels
 
-clean_empty_labels('data/sam_output/labels', 'data/sam_output/images')
 
-print("Script says: Empty label cleaning complete.")
+def main():
+    clean_empty_labels('data/sam_output/labels', 'data/sam_output/images')
+    print("Script says: Empty label cleaning complete.")
+
+
+if __name__ == "__main__":
+    main()

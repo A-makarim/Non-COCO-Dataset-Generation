@@ -75,7 +75,7 @@ def augment_directory(
     print("Colour augmentation complete")
 
 
-if __name__ == "__main__":
+def main():
     augment_directory(
         images_dir=Path("data/sam_output/images"),
         labels_dir=Path("data/sam_output/labels"),
@@ -85,3 +85,7 @@ if __name__ == "__main__":
         add_dust_flag=True,
         dust_intensity=0.3,
     )
+
+
+if __name__ == "__main__":
+    main()

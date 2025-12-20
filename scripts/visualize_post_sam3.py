@@ -12,6 +12,11 @@ if str(PROJECT_ROOT) not in sys.path:
 
 from src.annotate_labels_on_images import annotate_labels_on_images
 
-annotate_labels_on_images()
 
-print("Script says: Annotated images have been saved to the output directory.")
+def main():
+    annotate_labels_on_images()
+    print("Script says: Annotated images have been saved to the output directory.")
+
+
+if __name__ == "__main__":
+    main()
