@@ -14,7 +14,7 @@ def main():
     # Train the model
     results = model.train(
         data="data.yaml",
-        epochs=50,
+        epochs=10,  # increase later
         imgsz=640,
         batch=16,
         device=device,
