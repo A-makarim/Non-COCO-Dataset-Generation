@@ -1,3 +1,8 @@
+"""
+Sam3 video propogation is computationally expensive. This script extracts frames
+Thus a good comprmise 
+"""
+
 from pathlib import Path
 import sys
 
@@ -6,15 +11,12 @@ if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
 from src.video_to_images import extract_frames
-# from src.colour_augment import colour_jitter  # optional later
-
 
 VIDEO_DIR = "videos"
 OUT_DIR = "data/pre_sam/images"
 
 FRAME_STRIDE = 5 # Process every 5th frame
 RESIZE_WIDTH = 640 # None to disable
-
 
 def main():
     video_dir = Path(VIDEO_DIR)
@@ -45,7 +47,6 @@ def main():
             )
 
     print("\nPre-SAM processing complete")
-
 
 if __name__ == "__main__":
     main()
