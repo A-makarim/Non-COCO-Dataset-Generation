@@ -22,3 +22,11 @@ def add_dust(img, intensity=0.002):
         out[y, x] = [b, g, r]
 
     return out
+
+
+def main():
+    pass
+
+
+if __name__ == "__main__":
+    main()

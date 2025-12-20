@@ -38,3 +38,11 @@ def extract_frames(video_path, out_dir, frame_stride=5, resize_width=None):
 
     cap.release()
     print(f"Saved {saved} frames")
+
+
+def main():
+    pass
+
+
+if __name__ == "__main__":
+    main()
