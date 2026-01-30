@@ -17,6 +17,9 @@ def main():
     run_script("scripts/visualize_post_sam3.py")
     run_script("scripts/split_sam3_data.py")
     run_script("scripts/yolo_training.py")
+    run_script("scripts/yolo_testing.py")
+    run_script("scripts/create_sam3_video.py")
+    run_script("scripts/compare_performance.py")
 
 if __name__ == "__main__":
     main()

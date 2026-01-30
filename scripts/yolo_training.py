@@ -14,12 +14,12 @@ def main():
     # Train the model
     results = model.train(
         data="data.yaml",
-        epochs=10,  # increase later
+        epochs=30,  # increase later
         imgsz=640,
         batch=16,
         device=device,
         project="runs/detect",
-        name="probe_yolov8n",
+        name="3class_yolov8n",
         patience=10,
         save=True,
         verbose=False
