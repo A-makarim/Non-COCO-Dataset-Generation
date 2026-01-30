@@ -8,8 +8,10 @@ val:   data/augmented/val/images
 test:  data/augmented/test/images
 
 # Number of classes
-nc: 1
+nc: 3
 
-# Class names (index 0)
+# Class names (index 0, 1, 2)
 names:
-  - probe
+  - Yellow keychain
+  - yellow rubberduck
+  - white swan figurine
