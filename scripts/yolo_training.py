@@ -13,7 +13,7 @@ def main():
     
     # Train the model
     results = model.train(
-        data="data.yaml",
+        data="data_2class.yaml",
         epochs=10,  # increase later
         imgsz=640,
         batch=16,

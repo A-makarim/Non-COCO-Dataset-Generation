@@ -1,0 +1,7 @@
+.specstory/**
+data/**
+data_probe/**
+__pycache__/
+*.pyc
+
+runs/detect/predict/**
