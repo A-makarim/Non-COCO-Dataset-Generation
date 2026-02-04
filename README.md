@@ -19,6 +19,9 @@ This repository solves that problem by:
 - Automatically building a **train/val/test dataset**
 - Training a YOLOv8 detector on the generated data
 
+[to be added]
+- model hallucination/edge cases for poorly defined prompts
+
 ## Project Status
 
 Working prototype  
