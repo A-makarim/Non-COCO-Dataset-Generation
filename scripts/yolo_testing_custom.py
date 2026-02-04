@@ -21,7 +21,7 @@ DEVICE = 0  # 0 for GPU, 'cpu' for CPU
 # Weight estimation parameters (adjust manually based on camera distance)
 # Formula: weight_kg = area_pixels * SCALE_FACTOR
 # This is a rough approximation - tune based on known object distances
-SCALE_FACTOR = 0.0001  # kg per pixel² (adjust this for your setup)
+SCALE_FACTOR = 0.0001  # kg per pixel² . can later be calibrated using known objects in the scene
 
 # Annotation styling
 FONT = cv2.FONT_HERSHEY_SIMPLEX

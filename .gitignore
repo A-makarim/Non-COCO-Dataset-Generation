@@ -4,4 +4,4 @@ data_probe/**
 __pycache__/
 *.pyc
 
-runs/detect/predict/**
+runs/detect/predict/
