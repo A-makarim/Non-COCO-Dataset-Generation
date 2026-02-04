@@ -1,0 +1,21 @@
+# 2-Class Dataset: Probe + Mars Rocks
+
+train:
+  - data_probe/augmented/train/images
+  - data/augmented/train/images
+
+val:
+  - data_probe/augmented/val/images
+  - data/augmented/val/images
+
+test:
+  - data_probe/augmented/test/images
+  - data/augmented/test/images
+
+# Number of classes
+nc: 2
+
+# Class names
+names:
+  - probe        # class 0
+  - mars-rock    # class 1
