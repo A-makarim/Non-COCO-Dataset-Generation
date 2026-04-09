@@ -4,6 +4,8 @@ An end-to-end computer vision pipeline to **automatically generate a YOLOv8 data
 for detecting **ERC Mars Probes** from **unlabelled videos or images**, using  
 **SAM3 (Segment Anything Model 3 by Meta)** for auto-annotation of non-COCO or unsual classes.
 
+![SAM3 vs YOLO preview](image.png)
+
 I used this project for ERC Mars Probes. This project work for any **non-COCO object classes**, where labelled datasets do not exist. The entire outline automates the process. Just run it on a virtual machine and grab a drink while YOLO learns from SAM3.
 
 ## Motivation
