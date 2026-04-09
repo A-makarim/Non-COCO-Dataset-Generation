@@ -6,6 +6,14 @@ for detecting **ERC Mars Probes** from **unlabelled videos or images**, using
 
 I used this project for ERC Mars Probes. This project work for any **non-COCO object classes**, where labelled datasets do not exist. The entire outline automates the process. Just run it on a virtual machine and grab a drink while YOLO learns from SAM3.
 
+## Knowledge Distillation: SAM3 → YOLO
+
+SAM3 is accurate but slow (~866ms/frame). Once it auto-labels the dataset, YOLO learns from it and runs at **~6ms/frame** — over 100× faster, suitable for edge devices like NVIDIA Jetson.
+
+![SAM3 vs YOLO preview](image.png)
+
+*Top: SAM3 detections (865.7ms/frame) — Bottom: YOLO detections distilled from SAM3 (6.3ms/frame)*
+
 ## Motivation
 
 I had to run YOLOV8n on NVIDIA Jetson to find a good balance between accuracy and computaiton time. Using SAM3 is not optimal on such devices due to number of params. YOLO itself didn't had the intelligence to detect a prompt Object. It is not a ViT like SAM3. 
